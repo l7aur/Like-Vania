@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: -498239962987092992}
   - component: {fileID: 7598850671065009158}
   - component: {fileID: -8985363350937739371}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -126,7 +126,7 @@ Rigidbody2D:
   m_LinearDrag: 0
   m_AngularDrag: 0
   m_GravityScale: 4
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 7f8d1b30b7af3d742b38edc55783b404, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -146,7 +146,7 @@ CapsuleCollider2D:
   m_GameObject: {fileID: 7385017887376492119}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 7f8d1b30b7af3d742b38edc55783b404, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -214,6 +214,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a8ed018020b1f1c49a0511948f4d7876, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerGameSpeed: 9.21
+  playerGameSpeed: 8
   jumpSpeed: 10
-  climbSpeed: 2.5
+  climbSpeed: 5
