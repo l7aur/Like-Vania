@@ -18,6 +18,9 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] float jumpSpeed = 5f;
     [SerializeField] float climbSpeed = 2.5f;
     [SerializeField] Vector2 deathKick = new(10f, 10f);
+    [SerializeField] GameObject bullet;
+    [SerializeField] Transform gun;
+
     void Start()
     {
         myRigidBody = GetComponent<Rigidbody2D>();    
@@ -89,13 +92,21 @@ public class PlayerMovement : MonoBehaviour
         myRigidBody.velocity = climbVelocity;
         myRigidBody.gravityScale = 0f;
     }
+
     void Die()
     {
-        if (myRigidBody.IsTouchingLayers(LayerMask.GetMask("Enemies")))
+        if (myRigidBody.IsTouchingLayers(LayerMask.GetMask("Enemies", "Hazards")))
         {
             isAlive = false;
             myAnimator.SetTrigger("dying");
             myRigidBody.velocity = deathKick;
         }
+    }
+
+    void OnFire(InputValue value)
+    {
+        if (!isAlive)
+            return;
+        Instantiate(bullet, gun.position, transform.rotation);
     }
 }
