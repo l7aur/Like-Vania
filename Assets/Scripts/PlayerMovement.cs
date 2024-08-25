@@ -14,10 +14,15 @@ public class PlayerMovement : MonoBehaviour
     float gravityAtStart;
     bool isAlive = true;
 
+    [Header("Movement Attributes")]
     [SerializeField] float playerGameSpeed = 2f;
     [SerializeField] float jumpSpeed = 5f;
     [SerializeField] float climbSpeed = 2.5f;
+    [Header("Death Attributes")]
     [SerializeField] Vector2 deathKick = new(10f, 10f);
+    [SerializeField] float waterGravityReduction = 10f;
+    [SerializeField] float waterMassReduction = 1f;
+    [Header("Fire projectile ability")]
     [SerializeField] GameObject bullet;
     [SerializeField] Transform gun;
 
@@ -95,7 +100,14 @@ public class PlayerMovement : MonoBehaviour
 
     void Die()
     {
-        if (myRigidBody.IsTouchingLayers(LayerMask.GetMask("Enemies", "Hazards")))
+        if (myRigidBody.IsTouchingLayers(LayerMask.GetMask("Water")))
+        {
+            isAlive = false;
+            myAnimator.SetTrigger("dying");
+            myRigidBody.gravityScale /= waterGravityReduction;
+            myRigidBody.mass /= waterMassReduction;
+        }
+        else if (myRigidBody.IsTouchingLayers(LayerMask.GetMask("Enemies", "Hazards")))
         {
             isAlive = false;
             myAnimator.SetTrigger("dying");
