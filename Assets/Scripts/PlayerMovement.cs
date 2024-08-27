@@ -106,12 +106,14 @@ public class PlayerMovement : MonoBehaviour
             myAnimator.SetTrigger("dying");
             myRigidBody.gravityScale /= waterGravityReduction;
             myRigidBody.mass /= waterMassReduction;
+            FindObjectOfType<GameSession>().ProcessPlayerDeath();
         }
         else if (myRigidBody.IsTouchingLayers(LayerMask.GetMask("Enemies", "Hazards")))
         {
             isAlive = false;
             myAnimator.SetTrigger("dying");
             myRigidBody.velocity = deathKick;
+            FindObjectOfType<GameSession>().ProcessPlayerDeath();
         }
     }
 
