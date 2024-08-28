@@ -12,6 +12,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Big Enemy
       objectReference: {fileID: 0}
+    - target: {fileID: 4998040891099654554, guid: 1bc49120f4b4cf64f9da03c4b67b6c6e, type: 3}
+      propertyPath: m_Color.b
+      value: 0.56100386
+      objectReference: {fileID: 0}
+    - target: {fileID: 4998040891099654554, guid: 1bc49120f4b4cf64f9da03c4b67b6c6e, type: 3}
+      propertyPath: m_Color.g
+      value: 0.93207544
+      objectReference: {fileID: 0}
+    - target: {fileID: 4998040891099654554, guid: 1bc49120f4b4cf64f9da03c4b67b6c6e, type: 3}
+      propertyPath: m_Color.r
+      value: 0.8750745
+      objectReference: {fileID: 0}
     - target: {fileID: 5470536905372036656, guid: 1bc49120f4b4cf64f9da03c4b67b6c6e, type: 3}
       propertyPath: m_LocalScale.x
       value: 2
@@ -22,11 +34,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5470536905372036656, guid: 1bc49120f4b4cf64f9da03c4b67b6c6e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 79.81
+      value: 62.85
       objectReference: {fileID: 0}
     - target: {fileID: 5470536905372036656, guid: 1bc49120f4b4cf64f9da03c4b67b6c6e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 5.6499996
+      value: 2.1
       objectReference: {fileID: 0}
     - target: {fileID: 5470536905372036656, guid: 1bc49120f4b4cf64f9da03c4b67b6c6e, type: 3}
       propertyPath: m_LocalPosition.z
@@ -59,6 +71,10 @@ PrefabInstance:
     - target: {fileID: 5470536905372036656, guid: 1bc49120f4b4cf64f9da03c4b67b6c6e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7765671265104861424, guid: 1bc49120f4b4cf64f9da03c4b67b6c6e, type: 3}
+      propertyPath: lives
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

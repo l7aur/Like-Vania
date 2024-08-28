@@ -7,7 +7,6 @@ using TMPro;
 public class GameSession : MonoBehaviour
 {
     [SerializeField] int playerLives = 3;
-    [SerializeField] TextMeshProUGUI livesText;
     [SerializeField] TextMeshProUGUI scoreText;
     [SerializeField] int score = 0;
 
@@ -22,7 +21,6 @@ public class GameSession : MonoBehaviour
 
     private void Start()
     {
-        livesText.text = playerLives.ToString();
         scoreText.text = score.ToString();
     }
 
@@ -43,9 +41,15 @@ public class GameSession : MonoBehaviour
     void TakeLife()
     {
         playerLives--;
+        Heart heartScript = FindObjectOfType<Heart>();
+        heartScript.getImages()[playerLives].gameObject.SetActive(false);
+        if (playerLives == 1) // one life left so switch to fast beating
+        {
+            heartScript.ChangeAnimation(0);
+            Debug.Log("here");
+        }
         int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
         SceneManager.LoadScene(currentSceneIndex);
-        livesText.text = playerLives.ToString();
     }
 
     void ResetGameSession()

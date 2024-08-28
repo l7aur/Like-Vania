@@ -7,9 +7,12 @@ public class EnemyMovement : MonoBehaviour
     Rigidbody2D myRigidBody;
     BoxCollider2D reversePeriscopeCollider;
     [SerializeField] float movementSpeed = 1.0f;
+    [SerializeField] int lives = 1;
+    int maximumLives;
 
     void Start()
     {
+        maximumLives = lives;
         myRigidBody = GetComponent<Rigidbody2D>();
         reversePeriscopeCollider = GetComponent<BoxCollider2D>();
     }
@@ -27,6 +30,27 @@ public class EnemyMovement : MonoBehaviour
 
     void FlipEnemySprite()
     {
-        this.transform.localScale = new Vector2(-Mathf.Sign(myRigidBody.velocity.x), 1f);
+        Vector3 vector3 = this.transform.localScale;
+        vector3.x *= -1;
+        transform.localScale = vector3;
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Bullet"))
+        {
+            Destroy(collision.gameObject);
+            TakeDamage(Bullet.GetDamage());
+            if (lives < 1)
+            {
+                FindObjectOfType<GameSession>().AddScore(maximumLives);
+                Destroy(this.gameObject);
+            }
+        }
+    }
+
+    public void TakeDamage(int damage)
+    {
+        lives -= damage;
     }
 }
