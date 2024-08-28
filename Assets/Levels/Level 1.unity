@@ -50470,22 +50470,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1085503693663316648, guid: c85dd4704d94b344b83b6bb594cc451d, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: -790
-      objectReference: {fileID: 0}
-    - target: {fileID: 2511183239213424337, guid: c85dd4704d94b344b83b6bb594cc451d, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: -890
-      objectReference: {fileID: 0}
-    - target: {fileID: 5136610884678112851, guid: c85dd4704d94b344b83b6bb594cc451d, type: 3}
-      propertyPath: livesText
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 5603004610660210826, guid: c85dd4704d94b344b83b6bb594cc451d, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: -690
-      objectReference: {fileID: 0}
     - target: {fileID: 6251438035161325375, guid: c85dd4704d94b344b83b6bb594cc451d, type: 3}
       propertyPath: m_Name
       value: Game Session
