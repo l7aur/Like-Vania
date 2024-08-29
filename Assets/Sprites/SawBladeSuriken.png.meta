@@ -114,11 +114,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 5
-        y: 101
-        width: 24
-        height: 24
+        y: 100
+        width: 23
+        height: 23
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape:
@@ -143,11 +143,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 29
-        y: 101
-        width: 24
-        height: 24
+        y: 100
+        width: 23
+        height: 23
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape:
@@ -172,11 +172,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 53
-        y: 101
-        width: 24
-        height: 24
+        y: 100
+        width: 23
+        height: 23
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape:
@@ -201,11 +201,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 77
-        y: 101
-        width: 24
-        height: 24
+        y: 100
+        width: 23
+        height: 23
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape:
@@ -230,11 +230,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 5
-        y: 77
-        width: 24
-        height: 24
+        y: 69
+        width: 23
+        height: 23
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -251,11 +251,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 29
-        y: 77
-        width: 24
-        height: 24
+        y: 69
+        width: 23
+        height: 23
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -263,48 +263,6 @@ TextureImporter:
       bones: []
       spriteID: 63c5d1e5d96c4714d8f6cc65452569eb
       internalID: 202690326
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SawBladeSuriken_6
-      rect:
-        serializedVersion: 2
-        x: 5
-        y: 53
-        width: 24
-        height: 24
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 20eeb51d5658cf64fb3f6dbc022e7453
-      internalID: -91767044
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SawBladeSuriken_7
-      rect:
-        serializedVersion: 2
-        x: 29
-        y: 53
-        width: 24
-        height: 24
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 12f1b3d8919934e42ad74b7631b3c38a
-      internalID: 355988573
       vertices: []
       indices: 
       edges: []
@@ -326,8 +284,6 @@ TextureImporter:
       SawBladeSuriken_3: -1242414524
       SawBladeSuriken_4: 1466675339
       SawBladeSuriken_5: 202690326
-      SawBladeSuriken_6: -91767044
-      SawBladeSuriken_7: 355988573
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

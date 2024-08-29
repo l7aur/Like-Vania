@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class EnemyMovement : MonoBehaviour
 {
-    Rigidbody2D myRigidBody;
+    protected Rigidbody2D myRigidBody;
     BoxCollider2D reversePeriscopeCollider;
-    [SerializeField] float movementSpeed = 1.0f;
-    [SerializeField] int lives = 1;
-    int maximumLives;
+    [SerializeField] protected float movementSpeed = 1.0f;
+    [SerializeField] protected int lives = 1;
+    protected int maximumLives;
 
     void Start()
     {

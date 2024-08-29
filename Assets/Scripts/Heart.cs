@@ -29,7 +29,6 @@ public class Heart : MonoBehaviour
 
     void Update()
     {
-        Debug.Log(animationIndex);
         frame++;
         if (frame % framesPerSprite == 0)
         {
