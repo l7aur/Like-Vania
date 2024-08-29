@@ -64,3 +64,6 @@ TagManager:
   - name: Player
     uniqueID: 3487303469
     locked: 0
+  - name: Joke
+    uniqueID: 1135836629
+    locked: 0

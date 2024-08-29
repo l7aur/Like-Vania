@@ -24,8 +24,11 @@ public class EnemyMovement : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        movementSpeed *= -1;
-        FlipEnemySprite();
+        if (!collision.CompareTag("Bullet"))
+        {
+            movementSpeed *= -1;
+            FlipEnemySprite();
+        }
     }
 
     void FlipEnemySprite()

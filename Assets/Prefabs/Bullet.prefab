@@ -163,6 +163,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bulletSpeed: 10
+  ballisticDistance: 100
 --- !u!95 &8531293583910490488
 Animator:
   serializedVersion: 5
