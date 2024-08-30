@@ -162,8 +162,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e91eaf038774dc46a5574c85e23824d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletSpeed: 10
-  ballisticDistance: 100
+  bulletSpeed: 15
+  ballisticDistance: 75
 --- !u!95 &8531293583910490488
 Animator:
   serializedVersion: 5

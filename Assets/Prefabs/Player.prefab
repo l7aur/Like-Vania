@@ -251,7 +251,7 @@ MonoBehaviour:
   jumpSpeed: 10
   climbSpeed: 5
   deathKick: {x: 10, y: 10}
-  waterGravityReduction: 100000
+  waterGravityReduction: 100
   waterMassReduction: 1
   bullet: {fileID: 8328699031294324443, guid: 4beef6b884451604ba3d59093a847369, type: 3}
   gun: {fileID: 8216909426906540225}
