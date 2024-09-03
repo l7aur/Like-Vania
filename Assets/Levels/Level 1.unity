@@ -52741,6 +52741,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Game Session
       objectReference: {fileID: 0}
+    - target: {fileID: 8278343450723578429, guid: c85dd4704d94b344b83b6bb594cc451d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8278343450723578429, guid: c85dd4704d94b344b83b6bb594cc451d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 3634893605922253591, guid: 88e7e48de2d666547a90f250699fb531, type: 3}
     - target: {fileID: 8798573860235320757, guid: c85dd4704d94b344b83b6bb594cc451d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
