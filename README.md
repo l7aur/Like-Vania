@@ -1,4 +1,4 @@
-# UTCN-Vania
+# Like-Vania
 
 ## Table of contents
 
@@ -15,7 +15,7 @@ https://github.com/user-attachments/assets/efa903b6-774b-4904-9ad1-4cc5f4886e92
 
 ### Description
 
-UTCN-Vania is a 2D game inspired by Castlevania where the player takes control of a character. The character aims to pass from level to level while trying to collect coins and kill different kinds of enemies. Both kills and coins count up to the final score. 
+Like-Vania is a 2D game inspired by Castlevania where the player takes control of a character. The character aims to pass from level to level while trying to collect coins and kill different kinds of enemies. Both kills and coins count up to the final score. 
 
 ### Player Controls
 
